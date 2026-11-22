@@ -1,0 +1,11 @@
+[project]
+name = "comfyui-hyperflow-director"
+description = "Standalone planner, context cards and chunk renderer for long videos with HyperFlow H3 Flash (derived from ComfyUI-MiniMaxH3-Director)."
+version = "0.1.0"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = ["opencv-python>=4.8"]
+
+[tool.comfy]
+DisplayName = "HyperFlow Director"
+requires-comfyui = ">=0.43.0"

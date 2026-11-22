@@ -1,0 +1,10 @@
+ComfyUI-HyperFlow-Director is a derivative work of ComfyUI-MiniMaxH3-Director
+(https://github.com/seesee75-commits/ComfyUI-MiniMaxH3-Director, GPL-3.0).
+
+Changes: the planner, context-card and render code was copied into this pack; every node ID, custom type, HTTP route,
+storage folder, CSS class and browser event was renamed (NG* -> HFD*, /ng/ -> /hfd/, ...) so it can be installed beside
+the original; the render graph was rewritten for HyperFlow H3 Flash (euler, CFG 1, 4/6/8-step schedule, no Turbo LoRA,
+no MiniMaxH3SigmaShift); the Studio, Storyboard, Guide, Connector, Output, Preview, Control, Still and Legacy Director
+nodes were not carried over.
+
+The Flash step schedule constants come from the HyperFlow H3 Flash model card and ComfyUI-HyperFlow-Flash (GPL-3.0).
