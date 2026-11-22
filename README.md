@@ -19,6 +19,13 @@ Chunk Sequence renders with `euler`, CFG 1 (`BasicGuider`) and Flash's 4/6/8-ste
 no `MiniMaxH3SigmaShift`, no Turbo LoRA). Wire the model from **HyperFlow Loader**
 (`minimax_h3_ref2va_hyperflow_flash_14b-…` into `model_ref2va`, the `fl2va` file into `model_fl2va`).
 
+## Example workflow
+
+`example_workflows/video_production_hyperflow_h3_flash.json` (also in ComfyUI's template browser): script file -> Shot Script Parser ->
+HFD Chunk Planner -> HFD Chunk Sequence (Flash) -> Save Video, with HyperFlow Loader. It uses
+[ComfyUI-Shots-Parser](https://github.com/shubin73/ComfyUI-Shots-Parser) for the script nodes. The reference pictures
+(`zhou.jpg`, `xiao.webp`) and `music_video_script.txt` are not shipped: pick your own in the cards and the Load Script File node.
+
 ## Requirements
 
 * ComfyUI 0.43.0 or newer (native H3 nodes).
